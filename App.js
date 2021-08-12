@@ -42,8 +42,8 @@ export default class App extends Component {
 
         <View style={styles.layout01}>
           <View style={[styles.textInputContainer, styles.h50]}>
-            <TextInput value={this.state.altura} onChangeText={(altura)=>{this.setState({altura})}} placeholder="Altura" keyboardType="numeric" style={[styles.textInput, styles.textCenter]}></TextInput>
-            <TextInput value={this.state.massa} onChangeText={(massa)=>{this.setState({massa})}} placeholder="Peso" keyboardType="numeric" style={[styles.textInput, styles.textCenter]}></TextInput>
+            <TextInput onChangeText={(altura)=>{this.setState({altura})}} placeholder="Altura" keyboardType="numeric" style={[styles.textInput, styles.textCenter]}></TextInput>
+            <TextInput onChangeText={(massa)=>{this.setState({massa})}} placeholder="Peso" keyboardType="numeric" style={[styles.textInput, styles.textCenter]}></TextInput>
           </View>
 
           <TouchableOpacity style={[styles.button, styles.h50]} onPress={this.calcular}>
