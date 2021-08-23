@@ -85,6 +85,7 @@ const styles = StyleSheet.create({
   layout02: {
     height: '65%',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   //
   textCenter: {
